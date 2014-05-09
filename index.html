@@ -8,11 +8,15 @@
 
     // Wait for Cordova to load
     //
-    //document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
     //
     function onDeviceReady() {
+	  alert ("pronto");
+	}
+	
+	function dados(){
         var element = document.getElementById('deviceProperties');
 
         element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
@@ -27,6 +31,6 @@
   </head>
   <body>
     <p id="deviceProperties">teste</p>
-	<input type="button"  OnClick="onDeviceReady();" value="teste">
+	<input type="button"  OnClick="dados();" value="teste">
   </body>
 </html>
