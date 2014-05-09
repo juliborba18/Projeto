@@ -8,7 +8,7 @@
 
     // Wait for Cordova to load
     //
-    document.addEventListener("deviceready", onDeviceReady, false);
+    //document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
     //
@@ -19,14 +19,14 @@
                             'Device Cordova: '  + device.cordova + '<br />' + 
                             'Device Platform: ' + device.platform + '<br />' + 
                             'Device UUID: '     + device.uuid     + '<br />' + 
-                            'Device Model: '    + device.model     + '<br />' + 
+                            'Device Model: '    + window.device.model     + '<br />' + 
                             'Device Version: '  + device.version  + '<br />';
     }
 
     </script>
   </head>
   <body>
-    <p id="deviceProperties">Loading device properties...</p>
-	<input type="submit" OnClick="onDeviceReady()" value="teste">
+    <p id="deviceProperties">teste</p>
+	<input type= "button"  OnClick="onDeviceReady();" value="teste">
   </body>
 </html>
